@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import vid1 from '@/assets/vid1.mp4';
 import vid2 from '@/assets/vid2.mp4';
+import thumbnail1 from '../assets/IMG_3922.jpg';
+import thumbnail2 from '../assets/IMG_3714.jpg';
 
 const PortfolioSection = () => {
   const { t, i18n } = useTranslation();
@@ -17,13 +19,13 @@ const PortfolioSection = () => {
       title: t('portfolio.clientCampaign'),
       description: t('portfolio.description'),
       src: vid1,
-      poster: '/placeholder.svg'
+      poster: thumbnail1
     },
     {
       title: t('portfolio.clientCampaign2'),
       description: t('portfolio.description'),
       src: vid2,
-      poster: '/placeholder.svg'
+      poster: thumbnail2
     }
   ];
 

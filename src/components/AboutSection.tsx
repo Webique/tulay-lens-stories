@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import img from '../assets/IMG_3904.jpg';
 const AboutSection = () => {
   const { t, i18n } = useTranslation();
   const isArabic = i18n.language === 'ar';
@@ -41,7 +41,7 @@ const AboutSection = () => {
           >
             <div className="w-full h-[500px] rounded-2xl overflow-hidden shadow-lg border-2 border-gray-200">
               <img 
-                src="/IMG_3904.jpg"
+                src={img}
                 alt="About Tulay Alkhateeb"
                 className="w-full h-full object-cover"
                 style={{
