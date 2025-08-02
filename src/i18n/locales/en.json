@@ -27,7 +27,8 @@
   "portfolio": {
     "title": "My Work in Action",
     "clientCampaign": "Client Campaign",
-    "behindScenes": "Behind the Scenes"
+    "clientCampaign2": "Client Campaign #2",
+    "description": "Professional campaign showcasing brand storytelling through mobile photography"
   },
   "cta": {
     "title": "Let's Work Together",

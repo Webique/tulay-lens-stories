@@ -2,6 +2,8 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
+import vid1 from '@/assets/vid1.mp4';
+import vid2 from '@/assets/vid2.mp4';
 
 const PortfolioSection = () => {
   const { t, i18n } = useTranslation();
@@ -9,17 +11,19 @@ const PortfolioSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // For demo purposes, we'll use placeholder videos
+  // Actual videos with proper data
   const videos = [
     {
       title: t('portfolio.clientCampaign'),
-      description: 'Professional campaign showcasing brand storytelling through mobile photography',
-      placeholder: 'Client Campaign Video'
+      description: t('portfolio.description'),
+      src: vid1,
+      poster: '/placeholder.svg'
     },
     {
-      title: t('portfolio.behindScenes'),
-      description: 'Behind the scenes look at the creative process and mobile photography techniques',
-      placeholder: 'Behind the Scenes Video'
+      title: t('portfolio.clientCampaign2'),
+      description: t('portfolio.description'),
+      src: vid2,
+      poster: '/placeholder.svg'
     }
   ];
 
@@ -47,28 +51,15 @@ const PortfolioSection = () => {
             >
               <Card className="overflow-hidden border-0 shadow-elegant hover:shadow-cinematic transition-all duration-500 bg-white">
                 <div className="relative">
-                  {/* Video Placeholder - Replace with actual video when available */}
-                  <div className="w-full h-64 bg-gradient-accent flex items-center justify-center">
-                    <div className="text-center text-white">
-                      <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
-                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z"/>
-                        </svg>
-                      </div>
-                      <p className="text-lg font-medium">{video.placeholder}</p>
-                    </div>
-                  </div>
-                  {/* 
-                  Uncomment when actual videos are available:
                   <video 
                     className="w-full h-64 object-cover"
                     controls
-                    poster="/path/to/thumbnail.jpg"
+                    poster={video.poster}
+                    preload="metadata"
                   >
                     <source src={video.src} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
-                  */}
                 </div>
                 <CardContent className="p-6">
                   <h3 className={`text-xl font-bold text-foreground mb-3 ${isArabic ? 'font-arabic' : ''}`}>

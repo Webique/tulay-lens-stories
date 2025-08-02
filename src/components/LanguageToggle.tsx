@@ -21,7 +21,7 @@ const LanguageToggle = () => {
       onClick={toggleLanguage}
       variant="outline"
       size="sm"
-      className="fixed top-6 right-6 z-50 bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 transition-all duration-300"
+      className="fixed top-6 right-6 z-50 bg-burgundy text-white border-burgundy hover:bg-burgundy-dark hover:border-burgundy-dark transition-all duration-300 shadow-lg"
     >
       {i18n.language === 'en' ? 'العربية' : 'English'}
     </Button>

@@ -1,7 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import aboutImage from '@/assets/image3.jpg';
 
 const AboutSection = () => {
   const { t, i18n } = useTranslation();
@@ -33,20 +32,22 @@ const AboutSection = () => {
             </p>
           </motion.div>
 
-          {/* Image */}
+          {/* Image - Simple and direct approach */}
           <motion.div 
             initial={{ opacity: 0, x: isArabic ? -50 : 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className={`${isArabic ? 'lg:order-1' : ''}`}
           >
-            <div className="relative overflow-hidden rounded-2xl shadow-elegant">
+            <div className="w-full h-[500px] rounded-2xl overflow-hidden shadow-lg border-2 border-gray-200">
               <img 
-                src={aboutImage} 
+                src="/IMG_3904.jpg"
                 alt="About Tulay Alkhateeb"
-                className="w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover"
+                style={{
+                  objectPosition: 'center 25%'
+                }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
           </motion.div>
         </div>
