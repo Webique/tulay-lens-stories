@@ -8,35 +8,61 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Cinematic Color Palette - Black, Cream, Burgundy */
+    --background: 42 15% 95%; /* Warm cream */
+    --foreground: 0 0% 8%; /* Deep black */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 42 20% 98%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 42 20% 98%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 8%; /* Deep black */
+    --primary-foreground: 42 15% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 42 25% 92%; /* Light cream */
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 42 20% 90%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 355 65% 35%; /* Rich burgundy */
+    --accent-foreground: 42 15% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 20% 85%;
+    --input: 42 20% 92%;
+    --ring: 355 65% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom Cinematic Variables */
+    --burgundy: 355 65% 35%;
+    --burgundy-light: 355 45% 55%;
+    --burgundy-dark: 355 75% 25%;
+    --cream: 42 15% 95%;
+    --cream-light: 42 25% 98%;
+    --cream-dark: 42 20% 88%;
+    --black: 0 0% 8%;
+    --black-soft: 0 0% 15%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--black)) 0%, hsl(var(--burgundy-dark)) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(var(--burgundy)) 0%, hsl(var(--burgundy-light)) 100%);
+    --gradient-overlay: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 100%);
+    
+    /* Shadows */
+    --shadow-cinematic: 0 20px 60px -10px hsl(var(--black) / 0.3);
+    --shadow-elegant: 0 10px 30px -5px hsl(var(--burgundy) / 0.2);
+    
+    /* Transitions */
+    --transition-cinematic: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 

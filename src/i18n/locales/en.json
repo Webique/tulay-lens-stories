@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "name": "Tulay Alkhateeb",
+    "title": "Content Creator & Mobile Photographer",
+    "tagline": "My lens captures the details. My intuition chooses the moment."
+  },
+  "about": {
+    "title": "About Me",
+    "quote": "Elegant realism is the secret to content that connects.",
+    "description": "I help brands, clinics, restaurants, people, and events appear elegant, real, and emotionally resonant through creative mobile photography and voiceovers in a warm Saudi tone."
+  },
+  "services": {
+    "title": "What I Do",
+    "photography": {
+      "title": "Mobile Photography",
+      "description": "Professional mobile photography that captures authentic moments with elegant composition and emotional depth."
+    },
+    "voiceover": {
+      "title": "Saudi Voiceovers",
+      "description": "Warm, authentic voiceovers in Arabic that connect with your audience and convey your brand's personality."
+    },
+    "partnership": {
+      "title": "Content Partnership",
+      "description": "Strategic content creation partnerships that elevate your brand's visual storytelling and engagement."
+    }
+  },
+  "portfolio": {
+    "title": "My Work in Action",
+    "clientCampaign": "Client Campaign",
+    "behindScenes": "Behind the Scenes"
+  },
+  "cta": {
+    "title": "Let's Work Together",
+    "subtitle": "Ready to create something beautiful together?",
+    "whatsapp": "Start a Project",
+    "instagram": "See Portfolio"
+  },
+  "footer": {
+    "copyright": "© 2024 Tulay Alkhateeb. All rights reserved."
+  }
+}
