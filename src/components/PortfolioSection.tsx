@@ -13,6 +13,9 @@ const PortfolioSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+
+
+  
   // Actual videos with proper data
   const videos = [
     {
