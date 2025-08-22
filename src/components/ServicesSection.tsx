@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import image1 from '@/assets/image1.jpg';
 import image2 from '@/assets/image2.jpg';
-import image4 from '@/assets/image4.jpg';
+
 
 const ServicesSection = () => {
   const { t, i18n } = useTranslation();
@@ -27,7 +27,7 @@ const ServicesSection = () => {
     },
     {
       key: 'partnership',
-      image: image4,
+      image: '/lovable-uploads/b4d97d0d-28cd-4746-b2c3-a757e9e0d7f3.png',
       title: t('services.partnership.title'),
       description: t('services.partnership.description')
     }
